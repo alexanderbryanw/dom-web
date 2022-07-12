@@ -1,0 +1,173 @@
+html{
+	margin: 200px;
+}
+
+#bungkus {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	grid-template-rows: 1fr 0.3fr 0.8fr 6.8fr 0.2fr;
+	grid-template-areas:
+		"logo logo"
+		"menu menu"
+		"tengah tengah"
+		"main aside"
+		"footer footer";
+}
+
+#logo {
+	grid-area: logo;
+	padding: 30px 0;
+}
+
+#menu {
+	grid-area: menu;
+	height: 40px;
+	background: url("images/menu_bg.png");
+}
+
+#menu ul{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	list-style-type: none;
+}
+
+#menu ul li{
+	float: left;
+}
+
+#menu ul li a{
+    text-decoration: none;
+	color: white;
+	display: block;
+	text-align: center;
+    font-weight: normal;
+	font-family:Arial, Helvetica, sans-serif;
+	padding: 14px 16px;
+}
+
+#tengah {
+	grid-area: tengah;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Times New Roman', Times, serif;
+	color: rgb(112, 111, 111);
+	font-size: 18pt;
+}
+
+main {
+	grid-area: main;
+	color: rgb(71, 71, 71);
+	margin-right: 10px;
+}
+
+#subtitle{
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 18pt;
+	margin: 7px;
+}
+
+#subtitle2{
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 15pt;
+	margin: 7px;
+}
+#description{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 10pt;
+}
+
+#divider{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+aside{
+	margin-left: 10px;
+	grid-area: aside;
+}
+
+hr{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+nav {
+	height: 5px;	
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	list-style-type: none;
+}
+
+nav ul li{
+	float: left;
+	margin-right: 10px;
+	background: url("images/button.png");
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	text-align: center;
+    font-weight: normal;
+	font-family:'Times New Roman', Times, serif;
+	padding: 5px 10px;
+}
+
+#search{
+	height: 20px;
+	width: 100%;
+	background: url("images/search.png") no-repeat;
+	background-size: auto;
+	padding-left: 5px;
+	padding: 10px;
+	border: none;
+	color:  #666666;
+}
+
+footer{
+	grid-area: footer;
+	padding: 10px;
+	clear: both;
+    border-top: 1px solid #666666;
+	text-align: left;
+	justify-content: center;
+	background-color: rgb(43, 43, 43);
+	color: seashell;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#konten{
+	color: rgb(112, 111, 111);
+	font-size: 11pt;
+}
+
+#tags{
+	height: 5px;	
+}
+
+#tags ul{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#tags li{
+	float: left;
+	margin-left: 0;
+	margin-right: 6px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	list-style-type: none;
+	background-color: rgb(212, 212, 212);
+}
+
+#tags li a{
+	color: #666666;
+}
